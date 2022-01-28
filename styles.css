@@ -1,0 +1,160 @@
+html, body {
+    font-size: 14px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 150px;
+}
+
+.cardFylo {
+    border-radius: 10px 66px 10px 10px;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    padding: 30px;
+    width: 220px;
+}
+
+.cardFylo>img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.rowFylo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-right: 30%;
+}
+
+.rowFylo img {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 8px;
+    border: 10px;
+    height: 40px;
+    width: 40px;
+    object-fit: scale-down;
+}
+
+.storage {
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    color: hsl(229, 7%, 55%);
+    font-family: 'Raleway';
+    font-weight: 400;
+    width: 400px;
+    padding: 15px 30px;
+}
+
+.storage b {
+    color: hsl(243, 100%, 93%);
+}
+
+.usedStorage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notificacao{
+    position: absolute;
+    top: -10px;
+    right: 20px;
+}
+
+.notificacao b{
+    color: black;
+    font-size: 30px;
+}
+
+.notificacao span{
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.bubble{
+    position: relative;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 10px;
+}
+
+.bubble:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -50px;
+    margin-bottom: -20px;
+}
+
+.storageLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.storageLeft .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 15px;
+    border-radius: 20px;
+    background-color: hsl(229, 57%, 11%);
+    margin-bottom: 6px;
+}
+
+.porcentagem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid hsl(229, 57%, 11%);
+    height: 12px;
+    border-radius: 20px;
+    width: 81.5%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    height: 9px;
+    width: 9px;
+    margin-right: 2px;
+}
